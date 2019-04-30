@@ -1,0 +1,23 @@
+{
+  "name": "cute-piano-odyssey",
+  "version": "1.0.0",
+  "description": "Attempt to generate 8 bit sound files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lewismoten/cute-piano-odyssey.git"
+  },
+  "keywords": [
+    "sound",
+    "8bit"
+  ],
+  "author": "Lewis Moten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lewismoten/cute-piano-odyssey/issues"
+  },
+  "homepage": "https://github.com/lewismoten/cute-piano-odyssey#readme"
+}
