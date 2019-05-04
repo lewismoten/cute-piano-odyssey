@@ -45,6 +45,6 @@
     ]
   },
   "devDependencies": {
-    "riff-wave-reader": "^0.1.0"
+    "riff-wave-reader": "^0.1.1"
   }
 }
