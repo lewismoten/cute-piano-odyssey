@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const riff = require("riff-wave-reader");
 
 // TODO: Don't read entire file into memory
 let buffer = Buffer.from(fs.readFileSync(path.join(__dirname, "hello.wav")));
