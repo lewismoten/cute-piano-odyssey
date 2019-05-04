@@ -3,7 +3,16 @@ const path = require("path");
 const RiffReader = require("riff-wave-reader").Reader;
 
 const file = path.join(__dirname, "hello.wav");
-const riff = new RiffReader(file);
+const reader = new RiffReader(file);
+reader
+  .readRiff()
+  .then(reader.readFormat)
+  .then(reader.readDataHeader)
+  .then(() => {
+    // readSample(channel, index) {
+    console.log("GOT IT");
+  })
+  .catch(e => console.log("ERROR", e));
 
 // TODO: Don't read entire file into memory
 let buffer = Buffer.from(fs.readFileSync(path.join(__dirname, "hello.wav")));
